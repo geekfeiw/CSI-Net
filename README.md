@@ -1,7 +1,7 @@
 # CSI-Net pytorch
 This code can achieve multi-channel time-serial signals classification  as well as regression by modifying modern backbone networks. In our original paper, we have achieved four human sensing tasks with WiFi signals.
  
-We have applied this code with little modification to do motor fault diagnosis in engineering industry. Paper has been submitted to the TRANSACTIONS ON INDUSTRIAL ELECTRONICS with a title *Multi-scale Residual Learning Convolutional Neural Network for End-to-end Motor Fault Diagnosis Under Nonstationary Conditions*.
+We have applied this code with little modification to do motor fault diagnosis in engineering industry. Paper has been submitted to the Transactions on Industrial Electronics with title of *Multi-scale Residual Learning Convolutional Neural Network for End-to-end Motor Fault Diagnosis Under Nonstationary Conditions*.
 
 Currently, we are designing a light-weighted version for sensing tasks with COTS RFID. We believe this generic deep networks can solve more sensory data tasks. 
 
