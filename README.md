@@ -13,17 +13,17 @@ Currently, we are designing a light-weighted version for sensing tasks with COTS
 
 ## Useage
 1. clone repository: *git clone https://github.com/geekfeiw/CSI-Net.git*
-2. down pre-trained model to *weights*: *https://drive.google.com/open?id=16HOqFagtigjGry5asx-ErradnWS5rfe2*
+2. *mkdir weights*, then download pre-trained model into *weights*: *https://drive.google.com/open?id=16HOqFagtigjGry5asx-ErradnWS5rfe2*
 
 We used model, *model/res_net_use_this.py*, to jointly solve two body characterization tasks. Besides, we provide *model/solo_task_res_net.py* for solo classification tasks. 
 
 
 ## Citation
-Please cite this paper in your publications if it helps your research.
->@article{wang2018csi,
-  title={CSI-Net: Unified },
+Please cite this paper in your publications if it helps your research. On hold in
+@article{wang2018csi,
+  title={CSI-Net: Unified Body Characteration and Action Recognition},
   author={Wang, Fei and Han, Jinsong and Zhang, Shiyuan and He, Xu, Huang, Dong},
-  journal={arXiv preprint arXiv:1810.xxxxx},
+  journal={arXiv preprint},
   year={2018}
 }
 
