@@ -24,7 +24,7 @@ For various task/data complexity, we also provide multiple mainstream backbones,
 Please cite this paper in your publications if it helps your research.
 
     @article{wang2018csi,
-      title={CSI-Net: Unified Body Characteration and Action Recognition},
+      title={CSI-Net: Unified Body Characterization and Action Recognition},
       author={Wang, Fei and Han, Jinsong and Zhang, Shiyuan and He, Xu, Huang, Dong},
       journal={arXiv preprint},
       year={2018}
