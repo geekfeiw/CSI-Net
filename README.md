@@ -17,7 +17,7 @@ Currently, we are designing a light-weighted version for sensing tasks with COTS
 
 We used model, *model/res_net_use_this.py*, to jointly solve two body characterization tasks. Besides, we provide *model/solo_task_res_net.py* for solo classification tasks. 
 
-For various task/data complexity, we also provide codes of multiple mainstream backbones, including Inception V3, V4, VGG, AlexNet. 
+For various task/data complexity, we also provide multiple mainstream backbones, including Inception V3, V4, VGG, AlexNet. 
 
 
 ## Citation
