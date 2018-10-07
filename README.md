@@ -12,7 +12,7 @@ Currently, we are designing a light-weighted version for sensing tasks with COTS
 3. Windows7/Ubuntu 16.04
 
 ## Useage
-1. clone repository: *git clone https://github.com/geekfeiw/CSI-Net.git*
+1. clone repository.
 2. make a directory, name it *weights*, then download pre-trained model into *weights*: *https://drive.google.com/open?id=16HOqFagtigjGry5asx-ErradnWS5rfe2*
 
 We used model, *model/res_net_use_this.py*, to jointly solve two body characterization tasks. Besides, we provide *model/solo_task_res_net.py* for solo classification tasks. 
