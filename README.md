@@ -1,4 +1,7 @@
 # CSI-Net pytorch
+![](media/15388681240651/15388742349812.jpg)
+
+
 This code can achieve multi-channel time-serial signals classification  as well as regression by modifying modern backbone networks. In our original paper, we have achieved four human sensing tasks with WiFi signals.
  
 We have applied this code with little modification to do motor fault diagnosis in engineering industry. Paper has been submitted to the Transactions on Industrial Electronics with title of *Multi-scale Residual Learning Convolutional Neural Network for End-to-end Motor Fault Diagnosis Under Nonstationary Conditions*.
