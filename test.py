@@ -8,7 +8,7 @@ import torch.nn.functional as F
 import matplotlib.pyplot as plt
 import math
 import pandas as pd
-from model/res_net_use_this import ResNet, Bottleneck
+from model.res_net_use_this import ResNet, Bottleneck
 
 #
 batch_size = 100
