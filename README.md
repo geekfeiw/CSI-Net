@@ -8,7 +8,7 @@ We have applied this code with little modification to do motor fault diagnosis i
 
 ## Tested Environment
 1. python 3.6
-1. pytorch 4.0.1
+1. pytorch 0.4.1
 2. cuda 8.0/9.0
 3. Windows7/Ubuntu 16.04
 
