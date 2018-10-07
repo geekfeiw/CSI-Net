@@ -1,5 +1,5 @@
 # CSI-Net pytorch
-![](media/15388681240651/15388742349812.jpg)
+![](figures/networks.png)
 
 
 This code can achieve multi-channel time-serial signals classification  as well as regression by modifying modern backbone networks. In our original paper, we have achieved four human sensing tasks with WiFi signals.
