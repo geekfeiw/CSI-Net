@@ -13,7 +13,7 @@ We also applied this code with little modification to do motor fault diagnosis i
 4. cudnn 6.0/7.3
 5. Windows7/Ubuntu16.04
 
-## Useage
+## Usage
 1. clone repository.
 2. make a directory, name it *weights*, then download pre-trained model into *weights*: *https://drive.google.com/open?id=16HOqFagtigjGry5asx-ErradnWS5rfe2*
 
