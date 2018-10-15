@@ -33,6 +33,7 @@ data = sio.loadmat('data/aug_train_data.mat')
 train_data = data['aug_train_data']
 train_label = data['aug_train_label']
 
+# label matrix organized as nSamplex5, where the 1st coloum is the index of personID, the latter 4 are 4 biometrcs
 train_label[:, 0] = train_label[:, 0] - 1 # 1--30 -> 0--29
 
 num_train_instances = len(train_data)
@@ -75,7 +76,7 @@ resnet = resnet.cuda()
 criterion1 = nn.CrossEntropyLoss().cuda()
 criterion2 = nn.L1Loss().cuda()
 optimizer = torch.optim.Adam(resnet.parameters(), lr=learning_rate)
-scheduler = torch.optim.lr_scheduler.MultiStepLR(optimizer, milestones=[3, 6, 9, 12, 15, 18], gamma=0.1)
+scheduler = torch.optim.lr_scheduler.MultiStepLR(optimizer, milestones=[3, 6, 9, 12, 15, 18], gamma=0.3)
 
 for epoch in range(num_epochs):
     print('Epoch:', epoch)
@@ -105,6 +106,13 @@ for epoch in range(num_epochs):
         lossR4 = criterion2(predict_label[1][:, 3], labelsV[:, 4])
 
         loss = lossC + (0.0386*lossR1 + 0.0405*lossR2 + 0.0629*lossR3 + 0.0877*lossR4)/4
+        # Why 0.0386, 0.0405, 0.06029 and 0.0877: these fours are used to normalize four body biometrics
+        # fat/muscle/water/bone rates, for example, if looking paper Table 6, where we showed the information of 
+        # 30 recruited subjects. The minimal fat rate is 5, the maximum is 30.9, we decided to normarlize the fat rate
+        # by dividing (31-5), resulting in 0.0386.  0.0405->[65,90]muscle rate, 0.0629->[49,65]water rate, 0.0877->[1.5 13.0]  
+        # We doing this was spired by Faster RCNN loss, which has a object classfication and a bounding box regression. As paper
+        # said, they normalized the regression loss.
+        #
         # print(loss.item())
         # loss_every += loss.item()
         loss.backward()
