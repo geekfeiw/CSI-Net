@@ -4,7 +4,7 @@
 
 This code can achieve multi-channel, time-serial signal classification  as well as regression by modifying modern backbone networks. In our original paper, we have achieved four human sensing tasks with WiFi signals.
  
-We also applied this code with little modification to do motor fault diagnosis in engineering industry. Paper has been submitted to the Transactions on Industrial Electronics with title of *Multi-scale Residual Learning for End-to-end Motor Fault Diagnosis Under Nonstationary Conditions*. __ Code will be released soon.__ We are designing a light-weighted version for sensing tasks with COTS RFID (under progress). We believe this generic deep networks can solve more sensory data tasks. 
+We also applied this code with little modification to do motor fault diagnosis in engineering industry. Paper has been submitted to the Transactions on Industrial Electronics with title of *Multi-scale Residual Learning for End-to-end Motor Fault Diagnosis Under Nonstationary Conditions* (Data and Code will be released soon). We are designing a light-weighted version for sensing tasks with COTS RFID (under progress). We believe this generic deep networks can solve more sensory data tasks. 
 
 ## Tested Environment
 1. python 3.6
