@@ -179,7 +179,7 @@ class ResNet(nn.Module):
         layers = []
         layers.append(block(self.in_channels, out_channels, stride, downsample))
         self.in_channels = out_channels*block.expansion
-        for i in range(1, bclocks):
+        for i in range(1, blocks):
             layers.append(block(self.in_channels, out_channels))
         return nn.Sequential(*layers)
 
